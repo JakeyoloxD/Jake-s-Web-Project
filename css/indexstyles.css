@@ -1,0 +1,45 @@
+/* https://colors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
+Color pallette
+#F7FFF7- Almost white
+#343434 - dark grey- almost black
+#2F3061 - blue dark
+#FFE66D - Yellow
+#A1C6d7 - Blue light */
+
+/*Global styles
+---------------------------*/
+body{color:#343434;}
+img {width: 300;}
+a{color:#FFE66D;}
+a:hover{text-decoration:none;}
+/*Profile
+---------------------------*/
+header{background:#2F3061; color:#F7FFF7;}
+
+/*Projects
+---------------------------*/
+.projects{background:#F7FFF7;}
+.projectsa{ color: #2F3061;}
+.projectsa:hover {background:rgba(47,48,97 80%);}
+
+.projects .btn{color:#F7FFF7;background:#2F3061; text-decoration:none;
+padding:8px;border-radius:4px;}
+.projects .btn:hover {background:rgba(47,48,97 80%);}
+
+
+/*Work experience
+---------------------------*/
+.work-experience{background:#A1C6d7;}
+/*Education
+---------------------------*/
+
+
+  /* Contact info */
+footer {
+    background: #343434;
+    color: #F7FFF7;
+  }
+  
+  footer a {
+    color: #FFE66D; /* Set the link color in the footer to match the default link color */
+  }
