@@ -1,0 +1,137 @@
+/* https://colors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
+Color pallette
+#F7FFF7- Almost white
+#343434 - dark grey- almost black
+#2F3061 - blue dark
+#FFE66D - Yellow
+#A1C6d7 - Blue light */
+
+/*Global styles
+---------------------------*/
+body, h1, h2, p {
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
+  text-align: center; /* Center align the text content */
+}
+.NavigationBar {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Align items horizontally at the center */
+}
+
+.NavigationBar li {
+  margin: 0 20px;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+form {
+  width: 100%; /* Optionally set a width for the form */
+  max-width: 400px; /* Adjust the maximum width as needed */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="submit"] {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+/*Navigation bar-----------------*/
+.NavigationBar {
+  list-style: none; /* Remove the default bullet points */
+  padding: 0; /* Remove padding */
+  display: flex; /* Make the list items display in a row */
+}
+
+.NavigationBar li {
+  margin: 0 20px; /* Add some space between list items */
+}
+
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 40px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.content {
+  background-color: #fff;
+  padding: 20px;
+}
+
+
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}

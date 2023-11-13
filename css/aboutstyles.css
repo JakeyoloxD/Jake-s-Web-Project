@@ -1,60 +1,69 @@
-/* https://colors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
-Color pallette
-#F7FFF7- Almost white
-#343434 - dark grey- almost black
-#2F3061 - blue dark
-#FFE66D - Yellow
-#A1C6d7 - Blue light */
+/* https://colors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7 Color pallette #F7FFF7- Almost white #343434 - dark grey- almost black #2F3061 - blue dark #FFE66D - Yellow #A1C6d7 - Blue light */
 
-/*Global styles
----------------------------*/
-body{color:#343434;}
-img {width: 300;}
-a{color:#A1C6d7;}
-a:hover{text-decoration:none;}
+/* Global styles ---------------------------*/
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
 
-/*Navigation bar-----------------*/
+.container {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Navigation bar -----------------*/
 .NavigationBar {
-  list-style: none; /* Remove the default bullet points */
-  padding: 0; /* Remove padding */
-  display: flex; /* Make the list items display in a row */
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Align items horizontally at the center */
 }
 
 .NavigationBar li {
-  margin: 0 20px; /* Add some space between list items */
+    margin: 0 20px;
 }
 
-ul li {
-  margin: 0 20px; /* Add some space between list items */
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
-/*Profile
----------------------------*/
-header{background:#2F3061; color:#F7FFF7;}
 
-/*Projects
----------------------------*/
-.projects{background:#F7FFF7;}
-.projectsa{ color: #2F3061;}
-.projectsa:hover {background:rgba(47,48,97 80%);}
+.section-container {
+    display: flex;
+    justify-content: space-between;
+}
 
-.projects .btn{color:#F7FFF7;background:#2F3061; text-decoration:none;
-padding:8px;border-radius:4px;}
-.projects .btn:hover {background:rgba(47,48,97 80%);}
+.section {
+    width: 48%; /* Adjusted width to leave some space between sections */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
 
+.section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 
-/*Work experience
----------------------------*/
-.work-experience{background:#A1C6d7;}
-/*Education
----------------------------*/
-
-
-  /* Contact info */
 footer {
-    background: #343434;
-    color: #F7FFF7;
-  }
-  
-  footer a {
-    color: #FFE66D; /* Set the link color in the footer to match the default link color */
-  }
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}

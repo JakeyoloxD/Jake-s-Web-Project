@@ -8,53 +8,104 @@ Color pallette
 
 /*Global styles
 ---------------------------*/
-body{color:#343434;}
-img {width: 300;}
-a{color:#A1C6d7;}
-a:hover{text-decoration:none;}
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  text-align: center;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
 
 /*Navigation bar-----------------*/
 .NavigationBar {
-  list-style: none; /* Remove the default bullet points */
-  padding: 0; /* Remove padding */
-  display: flex; /* Make the list items display in a row */
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Align items horizontally at the center */
 }
 
 .NavigationBar li {
-  margin: 0 20px; /* Add some space between list items */
+  margin: 0 20px;
 }
 
-ul li {
-  margin: 0 20px; /* Add some space between list items */
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
-/*Profile
----------------------------*/
-header{background:#2F3061; color:#F7FFF7;}
+@media screen and (max-width: 600px) {
+  img {
+      width: 100%;
+      /* Add other styles as needed for smaller screens */
+  }
+}
+.hero {
+  text-align: center;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 40px;
+}
 
-/*Projects
----------------------------*/
-.projects{background:#F7FFF7;}
-.projectsa{ color: #2F3061;}
-.projectsa:hover {background:rgba(47,48,97 80%);}
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
 
-.projects .btn{color:#F7FFF7;background:#2F3061; text-decoration:none;
-padding:8px;border-radius:4px;}
-.projects .btn:hover {background:rgba(47,48,97 80%);}
+.content {
+  background-color: #fff;
+  padding: 20px;
+}
 
-
-/*Work experience
----------------------------*/
-.work-experience{background:#A1C6d7;}
-/*Education
----------------------------*/
-
-
-  /* Contact info */
 footer {
-    background: #343434;
-    color: #F7FFF7;
-  }
-  
-  footer a {
-    color: #FFE66D; /* Set the link color in the footer to match the default link color */
-  }
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+
+/*Yes, for the technique mentioned in point 4 (srcset attribute), you would typically create different versions of the same image with different resolutions and save them with specific names. This allows the browser to choose the appropriate image based on the user's device and screen size.
+
+Here's a breakdown of the process:
+
+Create Different Versions:
+
+Create multiple versions of your image with different resolutions. For example, you might have versions with widths of 480 pixels, 960 pixels, and 1920 pixels.
+Save with Specific Names:
+
+Save each version with a specific naming convention to indicate its width. For example:
+image-480.jpg
+image-960.jpg
+image-1920.jpg
+Use srcset Attribute:
+
+In your HTML, use the srcset attribute to specify the different image versions and their widths. Also, provide a default image using the src attribute.
+html
+Copy code
+<img srcset="img/image-480.jpg 480w,
+             img/image-960.jpg 960w,
+             img/image-1920.jpg 1920w"
+     sizes="(max-width: 480px) 100vw,
+            (max-width: 960px) 50vw,
+            100vw"
+     src="img/image-960.jpg" alt="Image 1">
+In this example, the browser will choose the appropriate image based on the user's screen width. If the screen width is less than or equal to 480 pixels, it will use image-480.jpg; if it's less than or equal to 960 pixels, it will use image-960.jpg, and so on.
+
+This technique is useful for optimizing image loading on different devices, ensuring that users receive images that are suitable for their screen sizes and resolutions. It can improve performance and reduce the amount of data transferred, especially on mobile devices with smaller screens.*/
