@@ -10,9 +10,17 @@ p {
 }
 
 .container {
-    text-align: center;
+    text-align: center; /* Center align the text content */
 }
-
+.container h1 {
+  font-size: 3.5em;
+  font-family: "Helvetica Neue", Arial, sans-serif; /* Adjust the margin-top as needed */
+  margin-bottom: 0px; /* Adjust the margin-bottom as needed */
+  padding: 0px; /* Adjust the padding as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -31,11 +39,15 @@ header {
     padding: 0;
     display: flex;
     justify-content: center; /* Align items horizontally at the center */
-}
-
-.NavigationBar li {
-    margin: 0 20px;
-}
+  }
+  
+  .NavigationBar li {
+    margin: 0 50px;
+    font-size: 2em;
+  }
+  .NavigationBar a {
+    text-decoration: none; /* Remove underline from links */
+  }
 
 .main {
     max-width: 1200px;

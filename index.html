@@ -1,53 +1,77 @@
-<!DOCTYPE html> <!--THe document type is HTML-->
-<html lang="en"> <!--thelanguage of the website is set to english-->
-<head> <!--this is the start of the head-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="css/indexstyles.css">
 </head>
-<body>
-    <div class="container"><h1>Streamer Supply Info</h1></div>
-        <ul class="NavigationBar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Gallery.html">Gallery</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-        </ul>
-        <main>
-            <div class="image">
-                    <!-- <img src="img/image.jpg" alt="Image 1" style="width: 100%;"> -->
-                    <img srcset="img/image-480.jpg 480w,
-                                 img/image-960.jpg 960w,
-                                 img/image-1920.jpg 1920w"
-                         sizes="(max-width: 480px) 100vw,
-                                (max-width: 960px) 50vw,
-                                100vw"
-                         src="img/image-960.jpg" alt="Image 1">
-            </div>
-            <article>
-                <h2>Introduction</h2>
-                <p>This is the introductory section.</p>
-                
-                <!--put a big image here-->
 
-                <h2>Section 1</h2>
-                <p>This is the first section</p>
-                
-                <h2>Section 2</h2>
-                <p>This is the second section</p>
-                
-                <!-- Add more sections-->
-            </article>
-        </main>
-        
-        <aside>
-            <!-- Sidebar content-->
-        </aside>
-        
-        <footer>
-            <p> &copy; Streamer Supply Info</p>
-        </footer>
-    </html>
+<body>
+    <div class="container">
+        <h1>Streamer Supply Info</h1>
+    </div>
+    <br>
+    <ul class="NavigationBar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+    <main>
+        <div class="hero">
+            <div class="overlay"></div>
+            <div class="text-container">
+                <h3>Unlock Your Streaming Superpowers with the Ultimate Gear Guide!</h3>
+                <h4>Transform Your Streaming Setup!</h4>
+                <h4>Amplify Your presence with the latest technology and stand out from the crowd!</h4>
+            </div>
+            <img srcset="img/480.jpg 480w,
+                             img/960.jpg 960w,
+                             img/1920.jpg 1920w,
+                             img/3840.jpg 3840w,
+                             img/7680.jpg 7680w"
+                sizes="(max-width: 480px) 100vw,
+                        (max-width: 960px) 50vw,
+                        (max-width: 1920px) 100vw,
+                        (max-width: 3840px) 50vw,
+                        25vw"
+                src="img/image-960.jpg" alt="Image 1">
+        </div>
+<div class="Information">
+        <h2>How to get started?</h2>
+        <p>This is the introductory section.</p>
+<br>
+        <h2>Section 1</h2>
+        <p>This is the first section</p>
+        <div class="section-container">
+            <div class="section" id="camera-section">
+                <img src="your_camera_image.jpg" alt="Camera Placeholder">
+                <br>
+                <h2>Camera</h2>
+                <p>
+                    The camera is a crucial element of your Twitch streaming setup. A high-quality camera ensures that your audience gets a clear and detailed view of your activities. Whether you're showcasing your gaming skills, creating content, or engaging with your viewers, a good camera enhances the overall streaming experience.
+                </p>
+            </div>
+        <br>
+            <div class="section" id="microphone-section">
+                <img src="your_microphone_image.jpg" alt="Microphone Placeholder">
+                <h2>Microphone</h2>
+                <p>
+                    A high-quality microphone is essential for delivering clear and professional audio during your Twitch streams. Whether you're commentating on your gameplay, interacting with your audience, or hosting interviews, a good microphone ensures that your voice is crisp and easily understandable. Invest in a quality microphone to elevate the audio quality of your streams.
+                </p>
+<br>
+
+    </div>
+    </main>
+<br>
+    <aside>
+        <!-- Sidebar content-->
+    </aside>
+<br>
+    <footer>
+        <p> &copy; Streamer Supply Info</p>
+    </footer>
 </body>
+</html>

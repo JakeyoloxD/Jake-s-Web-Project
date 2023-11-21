@@ -5,14 +5,29 @@ body, h1, h2, p {
 }
 
 .container {
-  text-align: center;
+  text-align: center; /* Center align the text content */
+}
+.container h1 {
+font-size: 3.5em;
+font-family: "Helvetica Neue", Arial, sans-serif; /* Adjust the margin-top as needed */
+margin-bottom: 0px; /* Adjust the margin-bottom as needed */
+padding: 0px; /* Adjust the padding as needed */
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
 }
-
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: relative; /* Add relative positioning to allow z-index */
+  z-index: 2; /* Ensure the header is above the content */
+}
 .NavigationBar {
   list-style: none;
   padding: 0;
@@ -21,9 +36,16 @@ body {
 }
 
 .NavigationBar li {
-  margin: 0 20px;
+  margin: 0 50px;
+  font-size: 2em;
 }
-
+.NavigationBar a {
+  text-decoration: none; /* Remove underline from links */
+}
+.container h1 {
+  font-size: 3.5em; /* Adjust the font size as needed */
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
 .grid-container {
   display: grid;
   gap: 16px;
@@ -63,4 +85,10 @@ body {
   .grid-container {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
 }

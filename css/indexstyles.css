@@ -12,8 +12,18 @@ body, h1, h2, p {
   margin: 0;
   padding: 0;
 }
+
 .container {
-  text-align: center;
+    text-align: center; /* Center align the text content */
+}
+.container h1 {
+  font-size: 3.5em;
+  font-family: "Helvetica Neue", Arial, sans-serif; /* Adjust the margin-top as needed */
+  margin-bottom: 0px; /* Adjust the margin-bottom as needed */
+  padding: 0px; /* Adjust the padding as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 body {
   font-family: Arial, sans-serif;
@@ -25,9 +35,11 @@ header {
   background-color: #333;
   color: #fff;
   padding: 10px 0;
+  position: relative; /* Add relative positioning to allow z-index */
+  z-index: 2; /* Ensure the header is above the banner */
 }
 
-/*Navigation bar-----------------*/
+/* Navigation bar----------------- */
 .NavigationBar {
   list-style: none;
   padding: 0;
@@ -36,21 +48,84 @@ header {
 }
 
 .NavigationBar li {
-  margin: 0 20px;
+  margin: 0 50px;
+  font-size: 2em;
 }
-
+.NavigationBar a {
+  text-decoration: none; /* Remove underline from links */
+}
 
 .main {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: 10 auto;
   padding: 20px;
+  text-align: justify; /* Align text inside main */
 }
-@media screen and (max-width: 600px) {
-  img {
-      width: 100%;
-      /* Add other styles as needed for smaller screens */
-  }
+.Information {
+  text-align: justify;
 }
+
+.Information h2 {
+  font-size: 1.5em; /* Adjust the font size as needed */
+  text-align: center; /* Center the heading */
+  margin-bottom: 10px; /* Add space between headings and paragraphs */
+}
+
+.Information p {
+  font-size: 1.0em; /* Adjust the font size as needed */
+  text-align: center;
+  margin-bottom: 20px; /* Add space between paragraphs */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  min-width: 100%; /* Ensure the image covers the entire width */
+  min-height: 100%; /* Maintain aspect ratio */
+  object-fit: cover; /* This ensures the image covers the entire container */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Adjust to make the text container span the full width */
+  text-align: center;
+  color: white; /* Text color */
+  z-index: 2; /* Ensure text is on top of the overlay */
+  padding: 20px; /* Add padding as needed */
+}
+.text-container h3 {
+  font-size: 2.0em; /* Adjust the font size as needed */
+  padding: 50px; 
+}
+
+.text-container h4 {
+  font-size: 1.5em; /* Adjust the font size as needed */
+}
+
 .hero {
   text-align: center;
   background-color: #007BFF;
@@ -58,19 +133,28 @@ header {
   padding: 40px;
 }
 
-.btn {
-  display: inline-block;
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-
 .content {
   background-color: #fff;
   padding: 20px;
+}
+.section-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  width: 48%; /* Adjusted width to leave some space between sections */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+  
+}
+
+.section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 footer {
@@ -78,6 +162,9 @@ footer {
   background-color: #333;
   color: #fff;
   padding: 10px 0;
+  clear: both; /* Clear floats before the footer */
+  position: relative; /* Ensure relative positioning */
+  margin-top: 200px; /* Adjust margin as needed */
 }
 
 
